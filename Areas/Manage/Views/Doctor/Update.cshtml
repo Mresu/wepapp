@@ -1,0 +1,37 @@
+﻿@using Medico.Models;
+@model Doctors
+
+
+
+
+<div class="container">
+
+
+<form method="post" enctype="multipart/form-data">
+
+
+  <div class="mb-3">
+    <label asp-for="FullName" class="form-label">FullName</label>
+    <input  class="form-control" asp-for="FullName">
+
+  </div>
+        <div class="mb-3">
+            <label asp-for="Position" class="form-label">Position</label>
+            <input class="form-control" asp-for="Position">
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="ImgFile" class="form-label">ImgFile</label>
+            <input class="form-control" asp-for="ImgFile">
+
+        </div>
+        <div class="row">
+            <img src="~/limon/doctorlimon/@Model.iMGuRL/" />
+
+        </div>
+        <div>
+            <button type="submit " class="btn btn-primary"> >Submit</button>
+        </div>
+
+</form>
+</div>
